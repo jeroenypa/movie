@@ -64,7 +64,7 @@ class MovieController extends Controller
     public function show($id)
     {
         $movie = Http::withToken(env('API_KEY'))
-            ->get('https://api.themoviedb.org/3/movie/'.$id)
+            ->get('https://api.themoviedb.org/3/movie/'.$id. '?append_to_response=credits,videos,images')
             ->json();
 
         dump($movie);

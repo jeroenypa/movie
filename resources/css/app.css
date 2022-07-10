@@ -49,7 +49,28 @@ body{
     gap: 1rem;
     margin: 2rem;
 }
-/*.show-container img{*/
-/*    width: 80%;*/
-/*}*/
-
+.show-container h1{
+    color: orange;
+    font-size: 2rem;
+}
+.show-container h3{
+    color: darkred;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+.show-cast-container{
+    margin: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+.show-movie-title{
+    color: orange;
+    font-size: 2rem;
+    margin: 2rem 2rem 0;
+}
+.show-cast-container h3{
+    color: darkred;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
