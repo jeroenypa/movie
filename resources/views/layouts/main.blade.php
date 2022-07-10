@@ -14,13 +14,7 @@
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/movie">Movies</a>
-                    </li>
-                    <li>
-                        <a href="#">TV-shows</a>
-                    </li>
-                    <li>
-                        <a href="#">Actors</a>
+                        <a href="/create">Form</a>
                     </li>
                 </ul>
                     <div class="border">
