@@ -517,10 +517,12 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 2rem;
+    border-bottom: #0b2e13 2px solid;
 }
 .nav-items-left{
     display: flex;
     gap: 2rem;
+    padding-bottom: 2rem;
 }
 .index-container{
     margin: 2rem;
@@ -598,5 +600,16 @@ body{
     padding: 1rem 3rem;
     background-color: #0f6674;
 }
-
+.updates-title{
+    margin: 2rem;
+}
+.updates-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 2rem;
+    gap: 1rem;
+}
+.updates-container-items {
+    border: 1px solid black;
+}
 

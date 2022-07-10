@@ -16,6 +16,9 @@
                     <li>
                         <a href="/create">Form</a>
                     </li>
+                    <li>
+                        <a href="/updates">Your input</a>
+                    </li>
                 </ul>
                     <div class="border">
                         <input class="" placeholder="search" type="text">

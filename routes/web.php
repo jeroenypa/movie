@@ -10,6 +10,7 @@ Route::get('/movies/{movie}', 'App\Http\Controllers\MovieController@show')->name
 Route::get('/create', function (){
     return view('create');
 });
+Route::get('/updates', 'App\Http\Controllers\Articles@index');
 
 Route::post('/create', function() {
     $article = new Article();
