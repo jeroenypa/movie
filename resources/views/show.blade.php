@@ -4,10 +4,10 @@
 
 
 <div class="show-container">
-    <img src="https://picsum.photos/200/300?random=1" alt="pic">
+    <img src="{{'https://image.tmdb.org/t/p/w500/'.$movie['poster_path']}}" alt="pic">
     <div>
-        <h3 class="index-movie-title">Tower</h3>
-        <p class="index-movie-text">this is a movie about someting</p>
+        <h1 class="index-movie-title">{{ $movie['title'] }}</h1>
+        <p class="index-movie-text">{{ $movie['overview'] }}</p>
     </div>
 </div>
 

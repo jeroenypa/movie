@@ -6,7 +6,7 @@
         <title>Movie APP</title>
         <link rel="stylesheet" href="../../css/app.css">
     </head>
-    <body class="font-sans bg-gray-900 text-white">
+    <body>
         <nav class="nav">
             <div class="nav-container">
                 <ul class="nav-items-left">

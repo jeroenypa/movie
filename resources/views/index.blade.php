@@ -8,11 +8,7 @@
         </div>
         <div class="index-grid">
             @foreach($popularMovies as $popularMovie)
-                <div class="index-grid-item">
-                    <img src="{{'https://image.tmdb.org/t/p/w500/'.$popularMovie['poster_path']}}" alt="pic">
-                    <h3 class="index-movie-title">{{ $popularMovie['title'] }}</h3>
-                    <p class="index-movie-text">{{ $popularMovie['overview'] }}</p>
-                </div>
+               <x-movie-card :popularMovie="$popularMovie" :genres="$genres" />
             @endforeach
         </div>
     </div>

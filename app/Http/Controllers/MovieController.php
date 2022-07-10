@@ -17,12 +17,22 @@ class MovieController extends Controller
         $popularMovies = Http::withToken(env('API_KEY'))
             ->get('https://api.themoviedb.org/3/movie/popular')
             ->json()['results'];
+
+        $genreArray = Http::withToken(env('API_KEY'))
+            ->get('https://api.themoviedb.org/3/genre/movie/list')
+            ->json()['genres'];
+
+        $genres = collect($genreArray)->mapWithKeys(function ($genre) {
+            return [$genre['id'] => $genre['name']];
+        });
+
 //        dump($popularMovies);
         return view('index',[
             'popularMovies' => $popularMovies,
+            'genres' => $genres,
         ]);
-
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -53,7 +63,15 @@ class MovieController extends Controller
      */
     public function show($id)
     {
-        //
+        $movie = Http::withToken(env('API_KEY'))
+            ->get('https://api.themoviedb.org/3/movie/'.$id)
+            ->json();
+
+        dump($movie);
+
+        return view('show', [
+            'movie' => $movie,
+        ]);
     }
 
     /**

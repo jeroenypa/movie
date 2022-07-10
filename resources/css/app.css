@@ -38,10 +38,16 @@ body{
 .index-movie-text{
     color: whitesmoke;
 }
+.index-movie-genre{
+    color: darkred;
+    display: inline-flex;
+    flex-direction: row;
+}
 .show-container{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     gap: 1rem;
+    margin: 2rem;
 }
 /*.show-container img{*/
 /*    width: 80%;*/
